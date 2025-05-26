@@ -26,7 +26,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img src="/logo11.png" alt="CrypticX Logo" className="h-20 w-20 md:h-24 md:w-24 object-scale-down" />
-            <span className="text-xl md:text-2xl font-bold text-[#000080] dark:text-[#4169E1] tracking-wide hidden sm:block">
+            <span className="text-xl md:text-2xl font-bold text-[#4169E1] tracking-wide hidden sm:block">
               CrypticX
             </span>
           </Link>

@@ -23,7 +23,7 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">CrypticX</h3>
+            <h3 className="text-xl font-bold mb-4 text-black dark:text-white">CrypticX</h3>
             <p className="text-gray-400">
               Empowering innovation through technology, trading, and education.
             </p>
@@ -31,7 +31,7 @@ function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4 text-black dark:text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
               <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
@@ -43,7 +43,7 @@ function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-4 text-black dark:text-white">Contact Us</h3>
             <div className="flex items-center space-x-4">
               <div className="relative">
                 <button
@@ -84,7 +84,7 @@ function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Newsletter</h3>
+            <h3 className="text-xl font-bold mb-4 text-black dark:text-white">Newsletter</h3>
             <p className="text-gray-400 mb-4">Subscribe to our newsletter for updates.</p>
             <form className="flex gap-2">
               <input

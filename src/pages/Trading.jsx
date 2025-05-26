@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaChartLine, FaShieldAlt, FaRobot, FaUsers, FaGlobe, FaChartBar, FaBuilding, FaNewspaper, FaBell, FaWhatsapp, FaTelegram } from 'react-icons/fa';
+import ContactButtons from '../components/ContactButtons';
 
 function Trading() {
   // 5 banners for trading
@@ -232,7 +233,7 @@ function Trading() {
               </div>
             </div>
             <h3 className="text-2xl font-bold text-[#1f3b73] mb-4 text-center">Signal Group</h3>
-            <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+            <ul className="space-y-3 text-gray-700 dark:text-gray-300 mb-4">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
                 <span>Real-time Signals</span>
@@ -241,11 +242,10 @@ function Trading() {
                 <span className="text-secondary">✓</span>
                 <span>Expert Analysis</span>
               </li>
-              <li className="flex items-center space-x-2">
-                <span className="text-secondary">✓</span>
-                <span>Community Support</span>
-              </li>
             </ul>
+            <div className="mt-6">
+              <ContactButtons />
+            </div>
           </div>
         </div>
 
@@ -282,29 +282,7 @@ function Trading() {
                 </ul>
               </div>
             </div>
-            <div className="flex justify-center gap-4 mb-8">
-              <a
-                href="https://wa.me/353894666666"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
-              >
-                <FaWhatsapp className="text-2xl" />
-                WhatsApp
-              </a>
-              <a
-                href="https://t.me/+353894666666"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#0088cc] hover:bg-[#006699] text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
-              >
-                <FaTelegram className="text-2xl" />
-                Telegram
-              </a>
-            </div>
-            <button className="bg-secondary hover:bg-secondary-dark text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-              Join Now
-            </button>
+
           </div>
         </div>
 

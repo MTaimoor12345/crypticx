@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ContactButtons from './components/ContactButtons';
+import EmailButton from './components/EmailButton';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Trading from './pages/Trading';
@@ -25,7 +25,7 @@ function App() {
               <Route path="/about" element={<About />} />
             </Routes>
           </main>
-          <ContactButtons />
+          <EmailButton />
           <Footer />
         </div>
       </Router>
