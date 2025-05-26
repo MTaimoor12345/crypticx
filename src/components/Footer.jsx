@@ -44,41 +44,53 @@ function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-white">Contact Us</h3>
-            <div className="flex items-center space-x-4">
-              <div className="relative">
-                <button
-                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  className="text-[#25D366] hover:text-[#25D366]/80 transition-colors text-2xl"
-                  title="WhatsApp Numbers"
+            <div className="space-y-4">
+              <div className="flex items-center space-x-4">
+                <div className="relative">
+                  <button
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                    className="text-[#25D366] hover:text-[#25D366]/80 transition-colors text-2xl"
+                    title="WhatsApp Numbers"
+                  >
+                    <FaWhatsapp />
+                  </button>
+                  
+                  {isDropdownOpen && (
+                    <div className="absolute bottom-full left-0 mb-2 w-48 bg-gray-800 rounded-lg shadow-xl py-2 z-50">
+                      {contacts.map((contact, idx) => (
+                        <a
+                          key={idx}
+                          href={`https://wa.me/${contact.number.replace("+", "")}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
+                        >
+                          WhatsApp {contact.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <a
+                  href={`https://t.me/${contacts[0].number.replace("+", "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0088cc] hover:text-[#0088cc]/80 transition-colors text-2xl"
+                  title="Telegram"
                 >
-                  <FaWhatsapp />
-                </button>
-                
-                {isDropdownOpen && (
-                  <div className="absolute bottom-full left-0 mb-2 w-48 bg-gray-800 rounded-lg shadow-xl py-2 z-50">
-                    {contacts.map((contact, idx) => (
-                      <a
-                        key={idx}
-                        href={`https://wa.me/${contact.number.replace("+", "")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block px-4 py-2 text-gray-300 hover:bg-gray-700"
-                      >
-                        WhatsApp {contact.label}
-                      </a>
-                    ))}
-                  </div>
-                )}
+                  <FaTelegram />
+                </a>
               </div>
-              <a
-                href={`https://t.me/${contacts[0].number.replace("+", "")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#0088cc] hover:text-[#0088cc]/80 transition-colors text-2xl"
-                title="Telegram"
-              >
-                <FaTelegram />
-              </a>
+              <div className="flex items-center space-x-3">
+                <FaEnvelope className="text-gray-300 text-xl" />
+                <a 
+                  href="mailto:crypticxglobal@gmail.com" 
+                  className="text-gray-300 hover:text-white transition-colors break-all"
+                  title="Email Us"
+                >
+                  crypticxglobal@gmail.com
+                </a>
+              </div>
             </div>
           </div>
 
