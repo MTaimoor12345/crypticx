@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-dark text-black dark:text-white transition-colors duration-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary dark:text-white;
+  }
+  
+  a {
+    @apply text-primary dark:text-white hover:text-secondary dark:hover:text-secondary transition-colors;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-primary text-white dark:bg-secondary dark:text-primary font-medium rounded hover:bg-primary-light dark:hover:bg-opacity-90 transition-colors;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-dark-light rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow;
+  }
+}
