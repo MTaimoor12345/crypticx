@@ -9,10 +9,10 @@ export default function Navbar() {
   const { isDarkMode, toggleTheme } = useTheme();
 
   const navLinkStyle = (path) =>
-    `relative px-3 py-2 hover:text-secondary transition-colors ${
+    `relative px-3 py-2 transition-colors ${
       pathname === path 
-        ? 'text-secondary font-semibold after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-secondary after:rounded-full' 
-        : 'text-white'
+        ? 'text-secondary-dark dark:text-secondary font-semibold after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-secondary after:rounded-full' 
+        : 'text-gray-700 dark:text-gray-200 hover:text-secondary dark:hover:text-secondary-light'
     }`;
 
   const toggleMenu = () => {
@@ -20,7 +20,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-primary dark:bg-dark shadow-md sticky top-0 z-50">
+    <nav className="bg-white dark:bg-dark shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -45,7 +45,7 @@ export default function Navbar() {
             {/* Theme Toggle Button */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full bg-gradient-to-r from-primary-light to-primary dark:from-dark-light dark:to-dark-lighter text-white transition-all duration-300 hover:shadow-lg hover:scale-110"
+              className="p-2 rounded-full bg-gray-100 dark:bg-dark-lighter text-gray-700 dark:text-gray-200 transition-all duration-300 hover:shadow-lg hover:scale-110"
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? (

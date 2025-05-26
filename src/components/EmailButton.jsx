@@ -2,7 +2,7 @@ import React from 'react';
 import { FaEnvelope } from 'react-icons/fa';
 
 function EmailButton() {
-  const email = 'info@crypticx.com'; // Replace with your actual email
+  const email = 'crypticxglobal@gmail.com';
   
   return (
     <a 
