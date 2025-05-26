@@ -62,7 +62,7 @@ export default function Academy() {
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Academy Coming Soon
+              Coming Soon !
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
               We're working hard to bring you comprehensive learning resources. Our academy will feature expert-led courses, interactive workshops, and hands-on projects to help you master new skills.
@@ -71,7 +71,7 @@ export default function Academy() {
 
 
 
-           
+
           </div>
         </div>
       </div>

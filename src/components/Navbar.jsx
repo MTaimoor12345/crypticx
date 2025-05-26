@@ -73,13 +73,13 @@ export default function Navbar() {
         
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-3 px-2 space-y-1 sm:px-3 border-t border-primary-light dark:border-dark-lighter">
+          <div className="md:hidden py-3 px-2 space-y-1 sm:px-3 bg-white dark:bg-dark border-t border-gray-200 dark:border-dark-lighter">
             <Link 
               to="/" 
               className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                 pathname === '/' 
-                  ? 'bg-primary-light dark:bg-dark-light text-secondary font-semibold shadow-inner' 
-                  : 'text-white hover:bg-primary-light dark:hover:bg-dark-light'
+                  ? 'bg-gray-100 dark:bg-dark-light text-secondary font-semibold' 
+                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-light'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -89,8 +89,8 @@ export default function Navbar() {
               to="/services" 
               className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                 pathname === '/services' 
-                  ? 'bg-primary-light dark:bg-dark-light text-secondary font-semibold shadow-inner' 
-                  : 'text-white hover:bg-primary-light dark:hover:bg-dark-light'
+                  ? 'bg-gray-100 dark:bg-dark-light text-secondary font-semibold' 
+                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-light'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -100,8 +100,8 @@ export default function Navbar() {
               to="/trading" 
               className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                 pathname === '/trading' 
-                  ? 'bg-primary-light dark:bg-dark-light text-secondary font-semibold shadow-inner' 
-                  : 'text-white hover:bg-primary-light dark:hover:bg-dark-light'
+                  ? 'bg-gray-100 dark:bg-dark-light text-secondary font-semibold' 
+                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-light'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -111,8 +111,8 @@ export default function Navbar() {
               to="/academy" 
               className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                 pathname === '/academy' 
-                  ? 'bg-primary-light dark:bg-dark-light text-secondary font-semibold shadow-inner' 
-                  : 'text-white hover:bg-primary-light dark:hover:bg-dark-light'
+                  ? 'bg-gray-100 dark:bg-dark-light text-secondary font-semibold' 
+                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-light'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -122,8 +122,8 @@ export default function Navbar() {
               to="/about" 
               className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                 pathname === '/about' 
-                  ? 'bg-primary-light dark:bg-dark-light text-secondary font-semibold shadow-inner' 
-                  : 'text-white hover:bg-primary-light dark:hover:bg-dark-light'
+                  ? 'bg-gray-100 dark:bg-dark-light text-secondary font-semibold' 
+                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-light'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
