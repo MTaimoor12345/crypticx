@@ -78,8 +78,8 @@ export default function Navbar() {
               to="/" 
               className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                 pathname === '/' 
-                  ? 'bg-gray-100 dark:bg-dark-light text-secondary font-semibold' 
-                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-light'
+                  ? 'text-secondary dark:text-secondary font-semibold' 
+                  : 'text-gray-700 dark:text-gray-200 hover:text-secondary dark:hover:text-secondary-light'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -89,8 +89,8 @@ export default function Navbar() {
               to="/services" 
               className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                 pathname === '/services' 
-                  ? 'bg-gray-100 dark:bg-dark-light text-secondary font-semibold' 
-                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-light'
+                  ? 'text-secondary dark:text-secondary font-semibold' 
+                  : 'text-gray-700 dark:text-gray-200 hover:text-secondary dark:hover:text-secondary-light'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -100,8 +100,8 @@ export default function Navbar() {
               to="/trading" 
               className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                 pathname === '/trading' 
-                  ? 'bg-gray-100 dark:bg-dark-light text-secondary font-semibold' 
-                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-light'
+                  ? 'text-secondary dark:text-secondary font-semibold' 
+                  : 'text-gray-700 dark:text-gray-200 hover:text-secondary dark:hover:text-secondary-light'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -111,8 +111,8 @@ export default function Navbar() {
               to="/academy" 
               className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                 pathname === '/academy' 
-                  ? 'bg-gray-100 dark:bg-dark-light text-secondary font-semibold' 
-                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-light'
+                  ? 'text-secondary dark:text-secondary font-semibold' 
+                  : 'text-gray-700 dark:text-gray-200 hover:text-secondary dark:hover:text-secondary-light'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -122,8 +122,8 @@ export default function Navbar() {
               to="/about" 
               className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ${
                 pathname === '/about' 
-                  ? 'bg-gray-100 dark:bg-dark-light text-secondary font-semibold' 
-                  : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-light'
+                  ? 'text-secondary dark:text-secondary font-semibold' 
+                  : 'text-gray-700 dark:text-gray-200 hover:text-secondary dark:hover:text-secondary-light'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
