@@ -18,27 +18,27 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Mission & Vision */}
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-blue-200 dark:border-blue-800 group">
             <div className="text-center mb-6">
-              <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center text-white transform hover:rotate-12 transition-transform duration-300">
-                <FaRocket className="text-4xl" />
+              <div className="bg-gradient-to-tr from-blue-600 to-blue-400 rounded-full p-5 shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
+                <FaRocket className="text-4xl text-white" />
               </div>
             </div>
-            <h2 className="text-3xl font-bold text-[#1f3b73] mb-4 text-center">Our Mission</h2>
-            <p className="text-gray-700 dark:text-gray-300 text-lg">
+            <h2 className="text-3xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Our Mission</h2>
+            <p className="text-gray-600 dark:text-gray-300 text-center text-lg">
               To democratize access to technology education and trading opportunities, enabling individuals to thrive in the digital economy.
             </p>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+          <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-purple-200 dark:border-purple-800 group">
             <div className="text-center mb-6">
-              <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-purple-700 flex items-center justify-center text-white transform hover:rotate-12 transition-transform duration-300">
-                <FaLightbulb className="text-4xl" />
+              <div className="bg-gradient-to-tr from-purple-600 to-purple-400 rounded-full p-5 shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
+                <FaLightbulb className="text-4xl text-white" />
               </div>
             </div>
-            <h2 className="text-3xl font-bold text-[#1f3b73] mb-4 text-center">Our Vision</h2>
-            <p className="text-gray-700 dark:text-gray-300 text-lg">
+            <h2 className="text-3xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Our Vision</h2>
+            <p className="text-gray-600 dark:text-gray-300 text-center text-lg">
               To be the leading platform for technology education and trading, fostering innovation and financial empowerment worldwide.
             </p>
           </div>

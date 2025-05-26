@@ -108,13 +108,16 @@ function Trading() {
 
         {/* Trading Features */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 transform hover:scale-[1.02]">
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-blue-200 dark:border-blue-800 group">
             <div className="text-center mb-6">
-              <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center text-white transform hover:rotate-12 transition-transform duration-300">
-                <FaChartLine className="text-4xl" />
+              <div className="bg-gradient-to-tr from-blue-600 to-blue-400 rounded-full p-5 shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
+                <FaChartLine className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 text-center">Technical Analysis</h3>
+            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Technical Analysis</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+              Advanced tools and techniques for market analysis and predictions.
+            </p>
             <ul className="space-y-3 text-gray-600 dark:text-gray-300">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
@@ -131,13 +134,16 @@ function Trading() {
             </ul>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 transform hover:scale-[1.02]">
+          <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-green-200 dark:border-green-800 group">
             <div className="text-center mb-6">
-              <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-green-500 to-green-700 flex items-center justify-center text-white transform hover:rotate-12 transition-transform duration-300">
-                <FaRobot className="text-4xl" />
+              <div className="bg-gradient-to-tr from-green-600 to-green-400 rounded-full p-5 shadow-lg group-hover:shadow-green-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
+                <FaRobot className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 text-center">Automated Trading</h3>
+            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Automated Trading</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+              Algorithmic trading solutions for 24/7 market opportunities.
+            </p>
             <ul className="space-y-3 text-gray-600 dark:text-gray-300">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
@@ -154,13 +160,16 @@ function Trading() {
             </ul>
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 transform hover:scale-[1.02]">
+          <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-purple-200 dark:border-purple-800 group">
             <div className="text-center mb-6">
-              <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-purple-700 flex items-center justify-center text-white transform hover:rotate-12 transition-transform duration-300">
-                <FaShieldAlt className="text-4xl" />
+              <div className="bg-gradient-to-tr from-purple-600 to-purple-400 rounded-full p-5 shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
+                <FaShieldAlt className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 text-center">Risk Management</h3>
+            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Risk Management</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+              Protect your investments with professional risk management.
+            </p>
             <ul className="space-y-3 text-gray-600 dark:text-gray-300">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
@@ -178,13 +187,16 @@ function Trading() {
           </div>
 
           {/* Brokerage Trading */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 transform hover:scale-[1.02]">
+          <div className="bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-red-200 dark:border-red-800 group">
             <div className="text-center mb-6">
-              <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-red-500 to-red-700 flex items-center justify-center text-white transform hover:rotate-12 transition-transform duration-300">
-                <FaBuilding className="text-4xl" />
+              <div className="bg-gradient-to-tr from-red-600 to-red-400 rounded-full p-5 shadow-lg group-hover:shadow-red-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
+                <FaBuilding className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 text-center">Brokerage Trading</h3>
+            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Brokerage Trading</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+              Professional brokerage services with competitive rates.
+            </p>
             <ul className="space-y-3 text-gray-600 dark:text-gray-300">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
@@ -202,13 +214,16 @@ function Trading() {
           </div>
 
           {/* Fundamental Analysis */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 transform hover:scale-105">
+          <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-yellow-200 dark:border-yellow-800 group">
             <div className="text-center mb-6">
-              <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-yellow-500 to-yellow-700 flex items-center justify-center text-white transform hover:rotate-12 transition-transform duration-300">
-                <FaNewspaper className="text-4xl" />
+              <div className="bg-gradient-to-tr from-yellow-600 to-yellow-400 rounded-full p-5 shadow-lg group-hover:shadow-yellow-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
+                <FaNewspaper className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1f3b73] mb-4 text-center">Fundamental Analysis</h3>
+            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Fundamental Analysis</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+              In-depth analysis of market fundamentals and trends.
+            </p>
             <ul className="space-y-3 text-gray-700 dark:text-gray-300">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
@@ -226,13 +241,16 @@ function Trading() {
           </div>
 
           {/* Signal Group */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 transform hover:scale-105">
+          <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 dark:from-indigo-900/20 dark:to-indigo-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-indigo-200 dark:border-indigo-800 group">
             <div className="text-center mb-6">
-              <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-indigo-500 to-indigo-700 flex items-center justify-center text-white transform hover:rotate-12 transition-transform duration-300">
-                <FaBell className="text-4xl" />
+              <div className="bg-gradient-to-tr from-indigo-600 to-indigo-400 rounded-full p-5 shadow-lg group-hover:shadow-indigo-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
+                <FaBell className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1f3b73] mb-4 text-center">Signal Group</h3>
+            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Signal Group</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+              Join our premium trading signals group for daily insights.
+            </p>
             <ul className="space-y-3 text-gray-700 dark:text-gray-300 mb-4">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
@@ -250,7 +268,9 @@ function Trading() {
         </div>
 
         {/* Join Signal Group Section */}
-        <div className="bg-gradient-to-r from-indigo-900 to-purple-900 rounded-2xl p-12 mb-16 text-white">
+        <div className="relative overflow-hidden bg-gradient-to-r from-indigo-900 to-purple-900 rounded-2xl p-12 mb-16 text-white shadow-2xl shadow-purple-500/20">
+          <div className="absolute -right-20 -top-20 w-64 h-64 bg-purple-500/20 rounded-full filter blur-3xl"></div>
+          <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-indigo-500/20 rounded-full filter blur-3xl"></div>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Signal Group</h2>
             <p className="text-xl text-gray-300 mb-8">
