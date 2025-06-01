@@ -118,7 +118,7 @@ function Footer() {
               <div className="relative">
                 <input
                   type="email"
-                  placeholder="Your email address"
+                  placeholder="Email"
                   className="w-full px-4 py-3 sm:py-3.5 text-sm sm:text-base rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-secondary-light focus:border-transparent transition-all placeholder-gray-400"
                   required
                   aria-label="Email address for newsletter subscription"
