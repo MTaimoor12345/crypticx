@@ -327,36 +327,51 @@ function Services() {
         </div>
 
         {/* Why Choose Us */}
-        <div className="bg-gradient-to-r from-blue-900 to-purple-900 rounded-2xl p-12 mb-16 text-white">
-          <h2 className="text-3xl font-bold mb-8 text-center text-white">Why Choose Our Services?</h2>
+        <div className="rounded-2xl p-12 mb-16">
+          <h2 className="text-3xl font-bold mb-8 text-center text-[#1f3b73] dark:text-white">Why Choose Our Services?</h2>
           <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-4">
-                <FaChartLine className="text-3xl text-white" />
+            {/* Proven Results Card */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-blue-200 dark:border-blue-800 group text-[#1f3b73] dark:text-white">
+              <div className="flex justify-center mb-6">
+                <div className="bg-gradient-to-tr from-blue-600 to-blue-400 rounded-full p-6 shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                  <FaChartLine className="text-5xl text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Proven Results</h3>
-              <p className="text-white/80">Consistent delivery of high-quality solutions</p>
+              <h3 className="text-2xl font-bold mb-2 text-center">Proven Results</h3>
+              <p className="text-center text-gray-600 dark:text-gray-300">Consistent delivery of high-quality solutions</p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-4">
-                <FaShieldAlt className="text-3xl text-white" />
+
+            {/* Security First Card */}
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-900/20 dark:to-pink-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-pink-200 dark:border-pink-800 group text-[#1f3b73] dark:text-white">
+              <div className="flex justify-center mb-6">
+                <div className="bg-gradient-to-tr from-pink-600 to-pink-400 rounded-full p-6 shadow-lg group-hover:shadow-pink-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                  <FaShieldAlt className="text-5xl text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Security First</h3>
-              <p className="text-white/80">Enterprise-grade security measures</p>
+              <h3 className="text-2xl font-bold mb-2 text-center">Security First</h3>
+              <p className="text-center text-gray-600 dark:text-gray-300">Enterprise-grade security measures</p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-4">
-                <FaUsers className="text-3xl text-white" />
+
+            {/* Expert Team Card */}
+            <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-green-200 dark:border-green-800 group text-[#1f3b73] dark:text-white">
+              <div className="flex justify-center mb-6">
+                <div className="bg-gradient-to-tr from-green-600 to-green-400 rounded-full p-6 shadow-lg group-hover:shadow-green-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                  <FaUsers className="text-5xl text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Expert Team</h3>
-              <p className="text-white/80">Skilled professionals with years of experience</p>
+              <h3 className="text-2xl font-bold mb-2 text-center">Expert Team</h3>
+              <p className="text-center text-gray-600 dark:text-gray-300">Skilled professionals with years of experience</p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-4">
-                <FaRobot className="text-3xl text-white" />
+
+            {/* Innovation Card */}
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-orange-200 dark:border-orange-800 group text-[#1f3b73] dark:text-white">
+              <div className="flex justify-center mb-6">
+                <div className="bg-gradient-to-tr from-orange-600 to-orange-400 rounded-full p-6 shadow-lg group-hover:shadow-orange-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                  <FaRobot className="text-5xl text-white" />
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Innovation</h3>
-              <p className="text-white/80">Cutting-edge technology solutions</p>
+              <h3 className="text-2xl font-bold mb-2 text-center">Innovation</h3>
+              <p className="text-center text-gray-600 dark:text-gray-300">Cutting-edge technology solutions</p>
             </div>
           </div>
         </div>

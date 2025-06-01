@@ -100,10 +100,10 @@ function Trading() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#1f3b73] mb-6">
             Professional Trading Solutions
           </h1>
-          <p className="text-xl text-[#4B5563] dark:text-white max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Advanced trading strategies and tools to help you navigate the crypto markets with confidence.
           </p>
         </div>
@@ -111,73 +111,73 @@ function Trading() {
         {/* Trading Features */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-blue-200 dark:border-blue-800 group">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-tr from-blue-600 to-blue-400 rounded-full p-5 shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
-                <FaChartLine className="text-4xl text-white" />
+            <div className="flex justify-center mb-6">
+              <div className="bg-gradient-to-tr from-blue-600 to-blue-400 rounded-full p-6 shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                <FaChartLine className="text-5xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Technical Analysis</h3>
-            <p className="text-[#4B5563] dark:text-white text-center mb-6">Advanced charting tools and indicators for precise market analysis.</p>
-            <ul className="space-y-3 text-[#4B5563] dark:text-white">
+            <h3 className="text-2xl font-bold text-[#1f3b73] mb-4 text-center">Technical Analysis</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">Advanced charting tools and indicators for precise market analysis.</p>
+            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
               <li className="flex items-center space-x-2">
-                <span className="text-secondary">✓</span>
-                <span className="text-[#4B5563] dark:text-white">Advanced Charting</span>
+                <span className="text-blue-500">✓</span>
+                <span>Advanced Charting</span>
               </li>
               <li className="flex items-center space-x-2">
-                <span className="text-secondary">✓</span>
-                <span className="text-[#4B5563] dark:text-white">Pattern Recognition</span>
+                <span className="text-blue-500">✓</span>
+                <span>Pattern Recognition</span>
               </li>
               <li className="flex items-center space-x-2">
-                <span className="text-secondary">✓</span>
-                <span className="text-[#4B5563] dark:text-white">Market Indicators</span>
+                <span className="text-blue-500">✓</span>
+                <span>Market Indicators</span>
               </li>
             </ul>
           </div>
 
           <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-green-200 dark:border-green-800 group">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-tr from-green-600 to-green-400 rounded-full p-5 shadow-lg group-hover:shadow-green-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
-                <FaRobot className="text-4xl text-white" />
+            <div className="flex justify-center mb-6">
+              <div className="bg-gradient-to-tr from-green-600 to-green-400 rounded-full p-6 shadow-lg group-hover:shadow-green-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                <FaRobot className="text-5xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Automated Trading</h3>
-            <p className="text-[#4B5563] dark:text-white text-center mb-6">Algorithmic trading solutions for 24/7 market opportunities.</p>
-            <ul className="space-y-3 text-[#4B5563] dark:text-white">
+            <h3 className="text-2xl font-bold text-[#1f3b73] mb-4 text-center">Automated Trading</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">Algorithmic trading solutions for 24/7 market opportunities.</p>
+            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
               <li className="flex items-center space-x-2">
-                <span className="text-secondary">✓</span>
-                <span className="text-[#4B5563] dark:text-white">Trading Bots</span>
+                <span className="text-green-500">✓</span>
+                <span>Trading Bots</span>
               </li>
               <li className="flex items-center space-x-2">
-                <span className="text-secondary">✓</span>
-                <span className="text-[#4B5563] dark:text-white">Strategy Automation</span>
+                <span className="text-green-500">✓</span>
+                <span>Strategy Automation</span>
               </li>
               <li className="flex items-center space-x-2">
-                <span className="text-secondary">✓</span>
-                <span className="text-[#4B5563] dark:text-white">24/7 Monitoring</span>
+                <span className="text-green-500">✓</span>
+                <span>24/7 Monitoring</span>
               </li>
             </ul>
           </div>
 
           <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-purple-200 dark:border-purple-800 group">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-tr from-purple-600 to-purple-400 rounded-full p-5 shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 transform group-hover:rotate-12 w-24 h-24 mx-auto flex items-center justify-center">
-                <FaShieldAlt className="text-4xl text-white" />
+            <div className="flex justify-center mb-6">
+              <div className="bg-gradient-to-tr from-purple-600 to-purple-400 rounded-full p-6 shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                <FaShieldAlt className="text-5xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Risk Management</h3>
-            <p className="text-[#4B5563] dark:text-white text-center mb-6">Protect your capital with our comprehensive risk management tools.</p>
-            <ul className="space-y-3 text-[#4B5563] dark:text-white">
+            <h3 className="text-2xl font-bold text-[#1f3b73] mb-4 text-center">Risk Management</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">Protect your capital with our comprehensive risk management tools.</p>
+            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
               <li className="flex items-center space-x-2">
-                <span className="text-secondary">✓</span>
-                <span className="text-[#4B5563] dark:text-white">Portfolio Protection</span>
+                <span className="text-purple-500">✓</span>
+                <span>Portfolio Protection</span>
               </li>
               <li className="flex items-center space-x-2">
-                <span className="text-secondary">✓</span>
-                <span className="text-[#4B5563] dark:text-white">Stop-Loss Strategies</span>
+                <span className="text-purple-500">✓</span>
+                <span>Stop-Loss Strategies</span>
               </li>
               <li className="flex items-center space-x-2">
-                <span className="text-secondary">✓</span>
-                <span className="text-[#4B5563] dark:text-white">Position Sizing</span>
+                <span className="text-purple-500">✓</span>
+                <span>Position Sizing</span>
               </li>
             </ul>
           </div>
@@ -275,52 +275,102 @@ function Trading() {
         </div>
 
         {/* Join Signal Group Section */}
-        <div className="relative overflow-hidden bg-[#e6f0ff] dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 rounded-2xl p-12 mb-16 text-white shadow-2xl shadow-purple-500/20">
-          <div className="absolute -right-20 -top-20 w-64 h-64 bg-purple-500/20 rounded-full filter blur-3xl"></div>
-          <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-indigo-500/20 rounded-full filter blur-3xl"></div>
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1F3B73] mb-6">Join Our Signal Group</h2>
-            <p className="text-xl text-[#4B5563] dark:text-white mb-8">
+       
+        <div className="mb-16">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1f3b73] mb-6">Join Our Signal Group</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Get access to real-time trading signals, expert analysis, and a supportive community of traders.
             </p>
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              <div className="bg-white/30 rounded-xl p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-bold text-[#1F3B73] dark:text-white mb-4">Free Trial</h3>
-                <ul className="space-y-3 text-[#4B5563] dark:text-white">
-                  <li className="text-[#4B5563] dark:text-white">3 Days Access</li>
-                  <li className="text-[#4B5563] dark:text-white">Basic Signals</li>
-                  <li className="text-[#4B5563] dark:text-white">Community Chat</li>
-                </ul>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+            <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 dark:from-indigo-900/20 dark:to-indigo-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-indigo-200 dark:border-indigo-800 group">
+              <div className="text-center mb-4">
+                <h3 className="text-2xl font-bold text-[#1f3b73] mb-2">Free Trial</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">3 Days Access</p>
               </div>
-              <div className="bg-white/30 rounded-xl p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-bold text-[#1F3B73] dark:text-white mb-4">Monthly</h3>
-                <ul className="space-y-3 text-[#4B5563] dark:text-white">
-                  <li className="text-[#4B5563] dark:text-white">Full Access</li>
-                  <li className="text-[#4B5563] dark:text-white">Premium Signals</li>
-                  <li className="text-[#4B5563] dark:text-white">24/7 Support</li>
-                </ul>
-              </div>
-              <div className="bg-white/30 rounded-xl p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-bold text-[#1F3B73] dark:text-white mb-4">Yearly</h3>
-                <ul className="space-y-3 text-[#4B5563] dark:text-white">
-                  <li className="text-[#4B5563] dark:text-white">Best Value</li>
-                  <li className="text-[#4B5563] dark:text-white">All Premium Features</li>
-                  <li className="text-[#4B5563] dark:text-white">Priority Support</li>
-                </ul>
-              </div>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+                <li className="flex items-center space-x-2">
+                  <span className="text-indigo-500">✓</span>
+                  <span>Basic Signals</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-indigo-500">✓</span>
+                  <span>Community Chat</span>
+                </li>
+              </ul>
+              <button className="w-full bg-white hover:bg-secondary hover:text-white text-blue-900 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+                Start Free Trial
+              </button>
             </div>
-
+            
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-blue-200 dark:border-blue-800 group">
+              <div className="text-center mb-4">
+                <h3 className="text-2xl font-bold text-[#1f3b73] mb-2">Monthly</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">Full Access</p>
+              </div>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+                <li className="flex items-center space-x-2">
+                  <span className="text-blue-500">✓</span>
+                  <span>Premium Signals</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-blue-500">✓</span>
+                  <span>24/7 Support</span>
+                </li>
+              </ul>
+              <button className="w-full bg-white hover:bg-secondary hover:text-white text-blue-900 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+                Subscribe Monthly
+              </button>
+            </div>
+            
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-purple-200 dark:border-purple-800 group">
+              <div className="text-center mb-4">
+                <h3 className="text-2xl font-bold text-[#1f3b73] mb-2">Yearly</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-6">Best Value</p>
+              </div>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300 mb-8">
+                <li className="flex items-center space-x-2">
+                  <span className="text-purple-500">✓</span>
+                  <span>All Premium Features</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-purple-500">✓</span>
+                  <span>Priority Support</span>
+                </li>
+              </ul>
+              <button className="w-full bg-white hover:bg-secondary hover:text-white text-blue-900 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+                Subscribe Yearly
+              </button>
+            </div>
           </div>
         </div>
+         
+
+
+
+
+
+
+
+
+
 
         {/* Trading Packages */}
         <div className="bg-[#e6f0ff] dark:bg-gradient-to-r dark:from-blue-900 dark:to-purple-900 rounded-2xl p-8 mb-16 text-white">
           <h2 className="text-3xl font-bold text-[#1F3B73] dark:text-white mb-8 text-center">Trading Packages</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white/10 hover:bg-white/20 dark:bg-white/5 dark:hover:bg-white/10 rounded-xl p-6 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 flex flex-col h-full border border-transparent hover:border-blue-200 dark:hover:border-blue-800 shadow hover:shadow-lg">
-              <div className="flex-grow bg-white/ p-4 rounded-lg">
-                <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-2">Basic</h3>
-                <p className="text-[#4B5563] dark:text-white mb-4">Perfect for beginners</p>
+            {/* Basic Package */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-blue-200 dark:border-blue-800 group flex flex-col h-full">
+              <div className="flex-grow">
+                <div className="flex justify-center mb-6">
+                  <div className="bg-gradient-to-tr from-blue-600 to-blue-400 rounded-full p-6 shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                    <FaChartLine className="text-5xl text-white" />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Basic</h3>
+                <p className="text-[#4B5563] dark:text-white text-center mb-6">Perfect for beginners</p>
                 <ul className="space-y-3 text-[#4B5563] dark:text-white">
                   <li className="flex items-center space-x-2">
                     <span className="text-green-400">✓</span>
@@ -336,74 +386,86 @@ function Trading() {
                   </li>
                 </ul>
               </div>
-              <button className="mt-6 w-full bg-white hover:bg-secondary hover:text-white text-blue-900 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+              <button className="mt-auto w-full bg-white hover:bg-secondary hover:text-white text-blue-900 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
                 Get Started
               </button>
             </div>
 
-            <div className="bg-white/10 hover:bg-white/20 dark:bg-white/5 dark:hover:bg-white/10 rounded-xl p-6 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 flex flex-col h-full border border-transparent hover:border-blue-200 dark:hover:border-blue-800 shadow hover:shadow-lg">
-              <div className="flex-grow bg-white/ p-4 rounded-lg">
-                <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-2">Professional</h3>
-                <p className="text-[#4B5563] dark:text-white mb-4">For serious traders</p>
+            {/* Professional Package */}
+            <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-green-200 dark:border-green-800 group flex flex-col h-full">
+              <div className="flex-grow">
+                <div className="flex justify-center mb-6">
+                  <div className="bg-gradient-to-tr from-green-600 to-green-400 rounded-full p-6 shadow-lg group-hover:shadow-green-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                    <FaRobot className="text-5xl text-white" />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Professional</h3>
+                <p className="text-[#4B5563] dark:text-white text-center mb-6">For serious traders</p>
                 <ul className="space-y-3 text-[#4B5563] dark:text-white">
                   <li className="flex items-center space-x-2">
-                    <span className="text-green-400">✓</span>
+                    <span className="text-green-500">✓</span>
                     <span className="text-[#4B5563] dark:text-white">Advanced Analysis</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-green-400">✓</span>
+                    <span className="text-green-500">✓</span>
                     <span className="text-[#4B5563] dark:text-white">Trading Bots</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-green-400">✓</span>
+                    <span className="text-green-500">✓</span>
                     <span className="text-[#4B5563] dark:text-white">1-on-1 Mentoring</span>
                   </li>
                 </ul>
               </div>
-              <button className="mt-6 w-full bg-white hover:bg-secondary hover:text-white text-blue-900 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+              <button className="mt-auto w-full bg-white hover:bg-secondary hover:text-white text-blue-900 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
                 Get Started
               </button>
             </div>
 
-            <div className="bg-white/10 hover:bg-white/20 dark:bg-white/5 dark:hover:bg-white/10 rounded-xl p-6 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 flex flex-col h-full border border-transparent hover:border-blue-200 dark:hover:border-blue-800 shadow hover:shadow-lg">
-              <div className="flex-grow bg-white/ p-4 rounded-lg">
-                <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-2">Enterprise</h3>
-                <p className="text-[#4B5563] dark:text-white mb-4">For institutions</p>
+            {/* Enterprise Package */}
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-purple-200 dark:border-purple-800 group flex flex-col h-full">
+              <div className="flex-grow">
+                <div className="flex justify-center mb-6">
+                  <div className="bg-gradient-to-tr from-purple-600 to-purple-400 rounded-full p-6 shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                    <FaShieldAlt className="text-5xl text-white" />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Enterprise</h3>
+                <p className="text-[#4B5563] dark:text-white text-center mb-6">For institutions</p>
                 <ul className="space-y-3 text-[#4B5563] dark:text-white">
                   <li className="flex items-center space-x-2">
-                    <span className="text-green-400">✓</span>
+                    <span className="text-purple-500">✓</span>
                     <span className="text-[#4B5563] dark:text-white">Custom Solutions</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-green-400">✓</span>
+                    <span className="text-purple-500">✓</span>
                     <span className="text-[#4B5563] dark:text-white">API Access</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <span className="text-green-400">✓</span>
+                    <span className="text-purple-500">✓</span>
                     <span className="text-[#4B5563] dark:text-white">Dedicated Support</span>
                   </li>
                   {[showMoreFeatures && (
                     <>
                       <li className="flex items-center space-x-2">
-                        <span className="text-green-400">✓</span>
+                        <span className="text-purple-500">✓</span>
                         <span className="text-[#4B5563] dark:text-white">Custom Reporting</span>
                       </li>
                       <li className="flex items-center space-x-2">
-                        <span className="text-green-400">✓</span>
+                        <span className="text-purple-500">✓</span>
                         <span className="text-[#4B5563] dark:text-white">24/7 Priority Support</span>
                       </li>
                       <li className="flex items-center space-x-2">
-                        <span className="text-green-400">✓</span>
+                        <span className="text-purple-500">✓</span>
                         <span className="text-[#4B5563] dark:text-white">Dedicated Account Manager</span>
                       </li>
                       <li className="flex items-center space-x-2">
-                        <span className="text-green-400">✓</span>
+                        <span className="text-purple-500">✓</span>
                         <span className="text-[#4B5563] dark:text-white">White-label Solutions</span>
                       </li>
                     </>
                   )]}
                 </ul>
-                <button 
+                <button
                   onClick={() => setShowMoreFeatures(!showMoreFeatures)}
                   className="text-sm text-blue-300 hover:text-black dark:hover:text-white mt-4 mb-2 transition-colors duration-300 flex items-center justify-center w-full"
                 >
@@ -452,6 +514,9 @@ function Trading() {
             </div>
           </div>
         </div>
+
+    
+       
 
         {/* Call to Action */}
         <div className="text-center">
