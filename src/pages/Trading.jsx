@@ -3,6 +3,8 @@ import { FaChartLine, FaShieldAlt, FaRobot, FaUsers, FaGlobe, FaChartBar, FaBuil
 import ContactButtons from '../components/ContactButtons';
 
 function Trading() {
+  const [showMoreFeatures, setShowMoreFeatures] = useState(false);
+  
   // 5 banners for trading
   const banners = [
     {
@@ -54,7 +56,7 @@ function Trading() {
   return (
     <div className="min-h-screen bg-white dark:bg-dark text-black dark:text-white transition-all">
       {/* Banner Slider */}
-      <div className="relative h-[60vh] w-full overflow-hidden mb-12">
+      <div className="relative h-[60vh] sm:h-[70vh] w-full overflow-hidden mb-12">
         {banners.map((banner, index) => (
           <div
             key={banner.id}
@@ -70,10 +72,10 @@ function Trading() {
               ></div>
               {/* Content */}
               <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-white">
                   {banner.title}
                 </h1>
-                <p className="text-xl md:text-2xl mb-8 max-w-2xl text-center">
+                <p className="text-xl md:text-2xl mb-8 max-w-2xl text-center text-white/90">
                   {banner.description}
                 </p>
               </div>
@@ -101,7 +103,7 @@ function Trading() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6">
             Professional Trading Solutions
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-[#4B5563] dark:text-white max-w-3xl mx-auto">
             Advanced trading strategies and tools to help you navigate the crypto markets with confidence.
           </p>
         </div>
@@ -114,22 +116,20 @@ function Trading() {
                 <FaChartLine className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Technical Analysis</h3>
-            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
-              Advanced tools and techniques for market analysis and predictions.
-            </p>
-            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+            <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Technical Analysis</h3>
+            <p className="text-[#4B5563] dark:text-white text-center mb-6">Advanced charting tools and indicators for precise market analysis.</p>
+            <ul className="space-y-3 text-[#4B5563] dark:text-white">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span className="text-gray-700 dark:text-gray-300">Advanced Charting</span>
+                <span className="text-[#4B5563] dark:text-white">Advanced Charting</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Pattern Recognition</span>
+                <span className="text-[#4B5563] dark:text-white">Pattern Recognition</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Market Indicators</span>
+                <span className="text-[#4B5563] dark:text-white">Market Indicators</span>
               </li>
             </ul>
           </div>
@@ -140,22 +140,20 @@ function Trading() {
                 <FaRobot className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Automated Trading</h3>
-            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
-              Algorithmic trading solutions for 24/7 market opportunities.
-            </p>
-            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+            <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Automated Trading</h3>
+            <p className="text-[#4B5563] dark:text-white text-center mb-6">Algorithmic trading solutions for 24/7 market opportunities.</p>
+            <ul className="space-y-3 text-[#4B5563] dark:text-white">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span className="text-gray-700 dark:text-gray-300">Trading Bots</span>
+                <span className="text-[#4B5563] dark:text-white">Trading Bots</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Strategy Automation</span>
+                <span className="text-[#4B5563] dark:text-white">Strategy Automation</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>24/7 Monitoring</span>
+                <span className="text-[#4B5563] dark:text-white">24/7 Monitoring</span>
               </li>
             </ul>
           </div>
@@ -166,22 +164,20 @@ function Trading() {
                 <FaShieldAlt className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Risk Management</h3>
-            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
-              Protect your investments with professional risk management.
-            </p>
-            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+            <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Risk Management</h3>
+            <p className="text-[#4B5563] dark:text-white text-center mb-6">Protect your capital with our comprehensive risk management tools.</p>
+            <ul className="space-y-3 text-[#4B5563] dark:text-white">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span className="text-gray-700 dark:text-gray-300">Portfolio Protection</span>
+                <span className="text-[#4B5563] dark:text-white">Portfolio Protection</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Stop-Loss Strategies</span>
+                <span className="text-[#4B5563] dark:text-white">Stop-Loss Strategies</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Position Sizing</span>
+                <span className="text-[#4B5563] dark:text-white">Position Sizing</span>
               </li>
             </ul>
           </div>
@@ -193,22 +189,20 @@ function Trading() {
                 <FaBuilding className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Brokerage Trading</h3>
-            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
-              Professional brokerage services with competitive rates.
-            </p>
-            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+            <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Brokerage Trading</h3>
+            <p className="text-[#4B5563] dark:text-white text-center mb-6">Professional brokerage services with competitive rates.</p>
+            <ul className="space-y-3 text-[#4B5563] dark:text-white">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span className="text-gray-700 dark:text-gray-300">Professional Brokerage</span>
+                <span className="text-[#4B5563] dark:text-white">Professional Brokerage</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Low Trading Fees</span>
+                <span className="text-[#4B5563] dark:text-white">Low Trading Fees</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Secure Trading Platform</span>
+                <span className="text-[#4B5563] dark:text-white">Secure Trading Platform</span>
               </li>
             </ul>
           </div>
@@ -220,22 +214,20 @@ function Trading() {
                 <FaNewspaper className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Fundamental Analysis</h3>
-            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
-              In-depth analysis of market fundamentals and trends.
-            </p>
-            <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+            <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Fundamental Analysis</h3>
+            <p className="text-[#4B5563] dark:text-white text-center mb-6">In-depth analysis of market fundamentals and trends.</p>
+            <ul className="space-y-3 text-[#4B5563] dark:text-white">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Market Research</span>
+                <span className="text-[#4B5563] dark:text-white">Market Research</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Project Analysis</span>
+                <span className="text-[#4B5563] dark:text-white">Project Analysis</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>News Impact Analysis</span>
+                <span className="text-[#4B5563] dark:text-white">News Impact Analysis</span>
               </li>
             </ul>
           </div>
@@ -247,58 +239,73 @@ function Trading() {
                 <FaBell className="text-4xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">Signal Group</h3>
-            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
-              Join our premium trading signals group for daily insights.
-            </p>
-            <ul className="space-y-3 text-gray-700 dark:text-gray-300 mb-4">
+            <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-4 text-center">Signal Group</h3>
+            <p className="text-[#4B5563] dark:text-white text-center mb-6">Join our premium trading signals group for daily insights.</p>
+            <ul className="space-y-3 text-[#4B5563] dark:text-white">
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Real-time Signals</span>
+                <span className="text-[#4B5563] dark:text-white">Real-time Signals</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-secondary">✓</span>
-                <span>Expert Analysis</span>
+                <span className="text-[#4B5563] dark:text-white">Expert Analysis</span>
               </li>
             </ul>
-            <div className="mt-6">
-              <ContactButtons />
+            <div className="mt-6 flex justify-center space-x-4">
+              <a
+                href="https://wa.me/923123456789"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-[#25D366] text-white"
+                title="WhatsApp"
+              >
+                <FaWhatsapp className="text-xl" />
+              </a>
+              <a
+                href="https://t.me/yourtelegram"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0088cc] text-white"
+                title="Telegram"
+              >
+                <FaTelegram className="text-xl" />
+              </a>
             </div>
           </div>
         </div>
 
         {/* Join Signal Group Section */}
-        <div className="relative overflow-hidden bg-gradient-to-r from-indigo-900 to-purple-900 rounded-2xl p-12 mb-16 text-white shadow-2xl shadow-purple-500/20">
+        <div className="relative overflow-hidden bg-[#e6f0ff] dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 rounded-2xl p-12 mb-16 text-white shadow-2xl shadow-purple-500/20">
           <div className="absolute -right-20 -top-20 w-64 h-64 bg-purple-500/20 rounded-full filter blur-3xl"></div>
           <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-indigo-500/20 rounded-full filter blur-3xl"></div>
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Signal Group</h2>
-            <p className="text-xl text-gray-300 mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1F3B73] mb-6">Join Our Signal Group</h2>
+            <p className="text-xl text-[#4B5563] dark:text-white mb-8">
               Get access to real-time trading signals, expert analysis, and a supportive community of traders.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
-              <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-bold mb-4">Free Trial</h3>
-                <ul className="space-y-3 text-gray-300">
-                  <li>3 Days Access</li>
-                  <li>Basic Signals</li>
-                  <li>Community Chat</li>
+              <div className="bg-white/30 rounded-xl p-6 backdrop-blur-sm">
+                <h3 className="text-xl font-bold text-[#1F3B73] dark:text-white mb-4">Free Trial</h3>
+                <ul className="space-y-3 text-[#4B5563] dark:text-white">
+                  <li className="text-[#4B5563] dark:text-white">3 Days Access</li>
+                  <li className="text-[#4B5563] dark:text-white">Basic Signals</li>
+                  <li className="text-[#4B5563] dark:text-white">Community Chat</li>
                 </ul>
               </div>
-              <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-bold mb-4">Monthly</h3>
-                <ul className="space-y-3 text-gray-300">
-                  <li>Full Access</li>
-                  <li>Premium Signals</li>
-                  <li>24/7 Support</li>
+              <div className="bg-white/30 rounded-xl p-6 backdrop-blur-sm">
+                <h3 className="text-xl font-bold text-[#1F3B73] dark:text-white mb-4">Monthly</h3>
+                <ul className="space-y-3 text-[#4B5563] dark:text-white">
+                  <li className="text-[#4B5563] dark:text-white">Full Access</li>
+                  <li className="text-[#4B5563] dark:text-white">Premium Signals</li>
+                  <li className="text-[#4B5563] dark:text-white">24/7 Support</li>
                 </ul>
               </div>
-              <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-bold mb-4">Yearly</h3>
-                <ul className="space-y-3 text-gray-300">
-                  <li>Best Value</li>
-                  <li>All Premium Features</li>
-                  <li>Priority Support</li>
+              <div className="bg-white/30 rounded-xl p-6 backdrop-blur-sm">
+                <h3 className="text-xl font-bold text-[#1F3B73] dark:text-white mb-4">Yearly</h3>
+                <ul className="space-y-3 text-[#4B5563] dark:text-white">
+                  <li className="text-[#4B5563] dark:text-white">Best Value</li>
+                  <li className="text-[#4B5563] dark:text-white">All Premium Features</li>
+                  <li className="text-[#4B5563] dark:text-white">Priority Support</li>
                 </ul>
               </div>
             </div>
@@ -307,74 +314,103 @@ function Trading() {
         </div>
 
         {/* Trading Packages */}
-        <div className="bg-gradient-to-r from-blue-900 to-purple-900 rounded-2xl p-8 mb-16 text-white">
-          <h2 className="text-3xl font-bold mb-8 text-center">Trading Packages</h2>
+        <div className="bg-[#e6f0ff] dark:bg-gradient-to-r dark:from-blue-900 dark:to-purple-900 rounded-2xl p-8 mb-16 text-white">
+          <h2 className="text-3xl font-bold text-[#1F3B73] dark:text-white mb-8 text-center">Trading Packages</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-              <h3 className="text-2xl font-bold mb-4">Basic</h3>
-              <p className="text-gray-300 mb-4">Perfect for beginners</p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center space-x-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Basic Analysis Tools</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Market Updates</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Community Access</span>
-                </li>
-              </ul>
-              <button className="w-full bg-white text-blue-900 font-bold py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">
-                Get Started
-              </button>
-            </div>
-
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm transform scale-105">
-              <div className="bg-secondary text-white text-sm font-bold px-3 py-1 rounded-full inline-block mb-4">
-                Most Popular
+            <div className="bg-white/10 hover:bg-white/20 dark:bg-white/5 dark:hover:bg-white/10 rounded-xl p-6 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 flex flex-col h-full border border-transparent hover:border-blue-200 dark:hover:border-blue-800 shadow hover:shadow-lg">
+              <div className="flex-grow bg-white/ p-4 rounded-lg">
+                <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-2">Basic</h3>
+                <p className="text-[#4B5563] dark:text-white mb-4">Perfect for beginners</p>
+                <ul className="space-y-3 text-[#4B5563] dark:text-white">
+                  <li className="flex items-center space-x-2">
+                    <span className="text-green-400">✓</span>
+                    <span className="text-[#4B5563] dark:text-white">Basic Analysis Tools</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-green-400">✓</span>
+                    <span className="text-[#4B5563] dark:text-white">Market Updates</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-green-400">✓</span>
+                    <span className="text-[#4B5563] dark:text-white">Community Access</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Professional</h3>
-              <p className="text-gray-300 mb-4">For serious traders</p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center space-x-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Advanced Analysis</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Trading Bots</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <span className="text-green-400">✓</span>
-                  <span>1-on-1 Mentoring</span>
-                </li>
-              </ul>
-              <button className="w-full bg-secondary text-white font-bold py-2 px-4 rounded-lg hover:bg-secondary-dark transition-colors">
+              <button className="mt-6 w-full bg-white hover:bg-secondary hover:text-white text-blue-900 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
                 Get Started
               </button>
             </div>
 
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-              <h3 className="text-2xl font-bold mb-4">Enterprise</h3>
-              <p className="text-gray-300 mb-4">For institutions</p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center space-x-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Custom Solutions</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <span className="text-green-400">✓</span>
-                  <span>API Access</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Dedicated Support</span>
-                </li>
-              </ul>
-              <button className="w-full bg-white text-blue-900 font-bold py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">
+            <div className="bg-white/10 hover:bg-white/20 dark:bg-white/5 dark:hover:bg-white/10 rounded-xl p-6 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 flex flex-col h-full border border-transparent hover:border-blue-200 dark:hover:border-blue-800 shadow hover:shadow-lg">
+              <div className="flex-grow bg-white/ p-4 rounded-lg">
+                <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-2">Professional</h3>
+                <p className="text-[#4B5563] dark:text-white mb-4">For serious traders</p>
+                <ul className="space-y-3 text-[#4B5563] dark:text-white">
+                  <li className="flex items-center space-x-2">
+                    <span className="text-green-400">✓</span>
+                    <span className="text-[#4B5563] dark:text-white">Advanced Analysis</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-green-400">✓</span>
+                    <span className="text-[#4B5563] dark:text-white">Trading Bots</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-green-400">✓</span>
+                    <span className="text-[#4B5563] dark:text-white">1-on-1 Mentoring</span>
+                  </li>
+                </ul>
+              </div>
+              <button className="mt-6 w-full bg-white hover:bg-secondary hover:text-white text-blue-900 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+                Get Started
+              </button>
+            </div>
+
+            <div className="bg-white/10 hover:bg-white/20 dark:bg-white/5 dark:hover:bg-white/10 rounded-xl p-6 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 flex flex-col h-full border border-transparent hover:border-blue-200 dark:hover:border-blue-800 shadow hover:shadow-lg">
+              <div className="flex-grow bg-white/ p-4 rounded-lg">
+                <h3 className="text-2xl font-bold text-[#1F3B73] dark:text-white mb-2">Enterprise</h3>
+                <p className="text-[#4B5563] dark:text-white mb-4">For institutions</p>
+                <ul className="space-y-3 text-[#4B5563] dark:text-white">
+                  <li className="flex items-center space-x-2">
+                    <span className="text-green-400">✓</span>
+                    <span className="text-[#4B5563] dark:text-white">Custom Solutions</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-green-400">✓</span>
+                    <span className="text-[#4B5563] dark:text-white">API Access</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <span className="text-green-400">✓</span>
+                    <span className="text-[#4B5563] dark:text-white">Dedicated Support</span>
+                  </li>
+                  {[showMoreFeatures && (
+                    <>
+                      <li className="flex items-center space-x-2">
+                        <span className="text-green-400">✓</span>
+                        <span className="text-[#4B5563] dark:text-white">Custom Reporting</span>
+                      </li>
+                      <li className="flex items-center space-x-2">
+                        <span className="text-green-400">✓</span>
+                        <span className="text-[#4B5563] dark:text-white">24/7 Priority Support</span>
+                      </li>
+                      <li className="flex items-center space-x-2">
+                        <span className="text-green-400">✓</span>
+                        <span className="text-[#4B5563] dark:text-white">Dedicated Account Manager</span>
+                      </li>
+                      <li className="flex items-center space-x-2">
+                        <span className="text-green-400">✓</span>
+                        <span className="text-[#4B5563] dark:text-white">White-label Solutions</span>
+                      </li>
+                    </>
+                  )]}
+                </ul>
+                <button 
+                  onClick={() => setShowMoreFeatures(!showMoreFeatures)}
+                  className="text-sm text-blue-300 hover:text-black dark:hover:text-white mt-4 mb-2 transition-colors duration-300 flex items-center justify-center w-full"
+                >
+                  {showMoreFeatures ? 'Show Less' : 'Show More Features...'}
+                </button>
+              </div>
+              <button className="mt-auto w-full bg-white hover:bg-secondary hover:text-white text-blue-900 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
                 Contact Us
               </button>
             </div>
@@ -383,43 +419,44 @@ function Trading() {
 
         {/* Why Choose Us */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-[#1f3b73] mb-8">Why Choose Our Trading Services?</h2>
+          <h2 className="text-3xl font-bold text-[#1F3B73] dark:text-white mb-8">Why Choose Our Trading Services?</h2>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="p-6">
               <div className="w-16 h-16 mx-auto rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mb-4">
                 <FaChartBar className="text-3xl text-blue-600 dark:text-blue-400" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Proven Results</h3>
-              <p className="text-gray-600 dark:text-gray-400">Consistent performance track record</p>
+              <h3 className="text-xl font-bold text-[#1F3B73] dark:text-white mb-2">Proven Results</h3>
+              <p className="text-[#4B5563] dark:text-white mb-4">Consistent performance track record</p>
             </div>
             <div className="p-6">
               <div className="w-16 h-16 mx-auto rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
                 <FaShieldAlt className="text-3xl text-green-600 dark:text-green-400" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Secure Platform</h3>
-              <p className="text-gray-600 dark:text-gray-400">Advanced security measures</p>
+              <h3 className="text-xl font-bold text-[#1F3B73] dark:text-white mb-2">Secure Platform</h3>
+              <p className="text-[#4B5563] dark:text-white mb-4">Advanced security measures</p>
             </div>
             <div className="p-6">
               <div className="w-16 h-16 mx-auto rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mb-4">
                 <FaUsers className="text-3xl text-purple-600 dark:text-purple-400" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Expert Team</h3>
-              <p className="text-gray-600 dark:text-gray-400">Professional traders & analysts</p>
+              <h3 className="text-xl font-bold text-[#1F3B73] dark:text-white mb-2">Expert Team</h3>
+              <p className="text-[#4B5563] dark:text-white mb-4">Professional traders & analysts</p>
             </div>
             <div className="p-6">
               <div className="w-16 h-16 mx-auto rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center mb-4">
                 <FaGlobe className="text-3xl text-red-600 dark:text-red-400" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Global Coverage</h3>
-              <p className="text-gray-600 dark:text-gray-400">Access to all major markets</p>
+              <h3 className="text-xl font-bold text-[#1F3B73] dark:text-white mb-2">Global Coverage</h3>
+              <p className="text-[#4B5563] dark:text-white mb-4">Access to all major markets</p>
+
             </div>
           </div>
         </div>
 
         {/* Call to Action */}
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-[#1f3b73] mb-6">Ready to Start Trading?</h2>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#1F3B73] mb-6">Ready to Start Trading?</h2>
+          <p className="text-xl text-[#4B5563] dark:text-white mb-8 max-w-2xl mx-auto">
             Join thousands of successful traders who trust our platform for their trading needs.
           </p>
           <button className="bg-secondary hover:bg-secondary-dark text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">

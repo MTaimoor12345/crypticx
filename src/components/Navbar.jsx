@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
 import { useTheme } from '../context/ThemeContext';
@@ -6,7 +6,22 @@ import { useTheme } from '../context/ThemeContext';
 export default function Navbar() {
   const { pathname } = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { isDarkMode, toggleTheme } = useTheme();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
 
   const navLinkStyle = (path) =>
     `relative px-3 py-2 transition-colors ${
@@ -20,13 +35,29 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white dark:bg-dark shadow-md sticky top-0 z-50">
+    <nav className={`sticky top-0 z-50 transition-all duration-500 ${
+      scrolled 
+        ? 'bg-white/95 dark:bg-dark/95 backdrop-blur-md shadow-lg py-2' 
+        : 'bg-white dark:bg-dark py-4 shadow-md'
+    }`}>
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
+        <div className={`flex justify-between items-center transition-all duration-300 ${
+          scrolled ? 'py-2' : 'py-0'
+        }`}>
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img src="/logo11.png" alt="CrypticX Logo" className="h-20 w-20 md:h-24 md:w-24 object-scale-down" />
-            <span className="text-xl md:text-2xl font-bold text-[#4169E1] tracking-wide hidden sm:block">
+            <div className={`transition-all duration-300 ${scrolled ? 'scale-90' : 'scale-100'}`}>
+              <img 
+                src="/logo11.png" 
+                alt="CrypticX Logo" 
+                className={`h-20 w-20 md:h-24 md:w-24 object-scale-down transition-all duration-300 ${
+                  scrolled ? 'h-16 w-16 md:h-20 md:w-20' : ''
+                }`} 
+              />
+            </div>
+            <span className={`text-xl md:text-2xl font-bold text-[#4169E1] tracking-wide hidden sm:block transition-all duration-300 ${
+              scrolled ? 'text-lg md:text-xl' : ''
+            }`}>
               CrypticX
             </span>
           </Link>

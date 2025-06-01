@@ -82,7 +82,7 @@ function Services() {
   return (
     <div className="min-h-screen bg-white dark:bg-dark text-black dark:text-white transition-all">
       {/* Banner Slider */}
-      <div className="relative h-[60vh] w-full overflow-hidden mb-12">
+      <div className="relative h-[60vh] sm:h-[70vh] w-full overflow-hidden mb-12">
         {banners.map((banner, index) => (
           <div
             key={banner.id}
@@ -98,13 +98,13 @@ function Services() {
               ></div>
               {/* Content */}
               <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
-                <div className="transform hover:scale-110 transition-transform duration-300 mb-8">
+                <div className="transform hover:scale-110 transition-transform duration-300 mb-8 text-white">
                   {banner.icon}
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center animate-fade-in">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center animate-fade-in text-white">
                   {banner.title}
                 </h1>
-                <p className="text-xl md:text-2xl mb-8 max-w-2xl text-center animate-fade-in-delay">
+                <p className="text-xl md:text-2xl mb-8 max-w-2xl text-center animate-fade-in-delay text-white/90">
                   {banner.description}
                 </p>
               </div>
@@ -133,10 +133,11 @@ function Services() {
         </h1>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {/* First Row - 3 Columns */}
           {/* Web Development */}
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-blue-200 dark:border-blue-800 group">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-tr from-blue-600 to-blue-400 rounded-full p-6 shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:rotate-12">
+            <div className="flex justify-center mb-6">
+              <div className="bg-gradient-to-tr from-blue-600 to-blue-400 rounded-full p-6 shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
                 <FaLaptopCode className="text-5xl text-white" />
               </div>
             </div>
@@ -162,8 +163,8 @@ function Services() {
 
           {/* AI Solutions */}
           <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-green-200 dark:border-green-800 group">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-tr from-green-600 to-green-400 rounded-full p-6 shadow-lg group-hover:shadow-green-500/50 transition-all duration-300 transform group-hover:rotate-12">
+            <div className="flex justify-center mb-6">
+              <div className="bg-gradient-to-tr from-green-600 to-green-400 rounded-full p-6 shadow-lg group-hover:shadow-green-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
                 <FaRobot className="text-5xl text-white" />
               </div>
             </div>
@@ -189,8 +190,8 @@ function Services() {
 
           {/* Mobile Applications */}
           <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-purple-200 dark:border-purple-800 group">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-tr from-purple-600 to-purple-400 rounded-full p-6 shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 transform group-hover:rotate-12">
+            <div className="flex justify-center mb-6">
+              <div className="bg-gradient-to-tr from-purple-600 to-purple-400 rounded-full p-6 shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
                 <FaMobileAlt className="text-5xl text-white" />
               </div>
             </div>
@@ -216,8 +217,8 @@ function Services() {
 
           {/* Blockchain Development */}
           <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-orange-200 dark:border-orange-800 group">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-tr from-orange-600 to-orange-400 rounded-full p-6 shadow-lg group-hover:shadow-orange-500/50 transition-all duration-300 transform group-hover:rotate-12">
+            <div className="flex justify-center mb-6">
+              <div className="bg-gradient-to-tr from-orange-600 to-orange-400 rounded-full p-6 shadow-lg group-hover:shadow-orange-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
                 <FaBitcoin className="text-5xl text-white" />
               </div>
             </div>
@@ -243,8 +244,8 @@ function Services() {
 
           {/* Cloud Integration */}
           <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 dark:from-cyan-900/20 dark:to-cyan-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-cyan-200 dark:border-cyan-800 group">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-tr from-cyan-600 to-cyan-400 rounded-full p-6 shadow-lg group-hover:shadow-cyan-500/50 transition-all duration-300 transform group-hover:rotate-12">
+            <div className="flex justify-center mb-6">
+              <div className="bg-gradient-to-tr from-cyan-600 to-cyan-400 rounded-full p-6 shadow-lg group-hover:shadow-cyan-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
                 <FaCloud className="text-5xl text-white" />
               </div>
             </div>
@@ -270,8 +271,8 @@ function Services() {
 
           {/* UI/UX Design */}
           <div className="bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-900/20 dark:to-pink-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-pink-200 dark:border-pink-800 group">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-tr from-pink-600 to-pink-400 rounded-full p-6 shadow-lg group-hover:shadow-pink-500/50 transition-all duration-300 transform group-hover:rotate-12">
+            <div className="flex justify-center mb-6">
+              <div className="bg-gradient-to-tr from-pink-600 to-pink-400 rounded-full p-6 shadow-lg group-hover:shadow-pink-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
                 <FaPalette className="text-5xl text-white" />
               </div>
             </div>
@@ -295,31 +296,33 @@ function Services() {
             </ul>
           </div>
 
-          {/* NFTs & Smart Contracts */}
-          <div className="bg-gradient-to-br from-violet-50 to-violet-100 dark:from-violet-900/20 dark:to-violet-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-violet-200 dark:border-violet-800 group">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-tr from-violet-600 to-violet-400 rounded-full p-6 shadow-lg group-hover:shadow-violet-500/50 transition-all duration-300 transform group-hover:rotate-12">
-                <FaEthereum className="text-5xl text-white" />
+          {/* NFTs & Smart Contracts - Centered in its own row */}
+          <div className="md:col-start-2 md:col-span-1">
+            <div className="bg-gradient-to-br from-violet-50 to-violet-100 dark:from-violet-900/20 dark:to-violet-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-violet-200 dark:border-violet-800 group h-full">
+              <div className="flex justify-center mb-6">
+                <div className="bg-gradient-to-tr from-violet-600 to-violet-400 rounded-full p-6 shadow-lg group-hover:shadow-violet-500/50 transition-all duration-300 transform group-hover:rotate-12 flex items-center justify-center w-24 h-24">
+                  <FaEthereum className="text-5xl text-white" />
+                </div>
               </div>
+              <h3 className="text-2xl font-bold text-[#1f3b73] dark:text-white mb-4 text-center">NFTs & Smart Contracts</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+                Create, deploy, and manage NFTs and smart contracts on blockchain networks.
+              </p>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+                <li className="flex items-center space-x-2">
+                  <span className="text-violet-500">✓</span>
+                  <span>NFT Development</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-violet-500">✓</span>
+                  <span>Smart Contract Development</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-violet-500">✓</span>
+                  <span>Blockchain Integration</span>
+                </li>
+              </ul>
             </div>
-            <h3 className="text-2xl font-bold text-[#1f3b73] mb-4 text-center">NFTs & Smart Contracts</h3>
-            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
-              Create, deploy, and manage NFTs and smart contracts on blockchain networks.
-            </p>
-            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
-              <li className="flex items-center space-x-2">
-                <span className="text-violet-500">✓</span>
-                <span>NFT Development</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <span className="text-violet-500">✓</span>
-                <span>Smart Contract Development</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <span className="text-violet-500">✓</span>
-                <span>Blockchain Integration</span>
-              </li>
-            </ul>
           </div>
         </div>
 

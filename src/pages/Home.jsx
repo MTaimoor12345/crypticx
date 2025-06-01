@@ -61,9 +61,9 @@ function Home() {
   }, [banners.length]);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-dark text-black dark:text-white transition-all">
-      {/* Full Screen Banner Slider */}
-      <div className="relative h-screen w-full overflow-hidden">
+    <div className="min-h-screen bg-white dark:bg-dark text-black dark:text-white transition-all w-full overflow-x-hidden">
+      {/* Banner Slider */}
+      <div className="relative h-[60vh] sm:h-[70vh] w-screen overflow-hidden">
         {banners.map((banner, index) => (
           <div
             key={banner.id}
@@ -80,16 +80,16 @@ function Home() {
               
               {/* Content */}
               <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-4">
-                <div className="transform hover:scale-110 transition-transform duration-300 mb-8">
-                  {banner.icon}
+                <div className="transform hover:scale-110 transition-transform duration-300 mb-4 sm:mb-8">
+                  {React.cloneElement(banner.icon, { className: 'text-5xl sm:text-6xl text-white' })}
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center animate-fade-in">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4 text-center animate-fade-in px-2 text-white">
                   {banner.title}
                 </h1>
-                <p className="text-xl md:text-2xl mb-8 max-w-2xl text-center animate-fade-in-delay">
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-8 max-w-2xl text-center animate-fade-in-delay px-4 text-white/90">
                   {banner.description}
                 </p>
-                <button className="px-8 py-4 bg-secondary text-white font-bold rounded-full hover:bg-secondary-dark transition-all duration-300 transform hover:scale-105 hover:shadow-lg animate-fade-in-delay-2">
+                <button className="px-6 sm:px-8 py-3 sm:py-4 bg-secondary text-white font-bold rounded-full hover:bg-secondary-dark transition-all duration-300 transform hover:scale-105 hover:shadow-lg animate-fade-in-delay-2 text-sm sm:text-base">
                   {banner.buttonText}
                 </button>
               </div>
@@ -130,31 +130,31 @@ function Home() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 md:px-6 py-8 sm:py-12">
         {/* Section Heading and Intro */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#1f3b73] mb-4 tracking-wide">
+        <div className="text-center mb-8 sm:mb-16 px-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#1f3b73] mb-3 sm:mb-4 tracking-wide">
             Our Core Divisions
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             We empower innovation, trading, and learning through our specialized divisions. Explore what makes us unique!
           </p>
         </div>
 
         {/* Attractive Divisions Section */}
-        <section className="grid md:grid-cols-3 gap-8 mb-16">
+        <section className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
           {/* Tech Division */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 backdrop-blur-md rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-blue-200 dark:border-blue-800 group">
-            <div className="flex justify-center mb-6">
-              <div className="bg-gradient-to-tr from-blue-600 to-blue-400 rounded-full p-6 shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:rotate-12">
-                <FaCode className="text-5xl text-white" />
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 backdrop-blur-md rounded-2xl shadow-xl p-6 sm:p-8 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl border border-blue-200 dark:border-blue-800 group">
+            <div className="flex justify-center mb-4 sm:mb-6">
+              <div className="bg-gradient-to-tr from-blue-600 to-blue-400 rounded-full p-4 sm:p-6 shadow-lg group-hover:shadow-blue-500/50 transition-all duration-300 transform group-hover:rotate-12">
+                <FaCode className="text-4xl sm:text-5xl text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-[#1f3b73] mb-4 text-center">Tech Division</h3>
-            <p className="text-gray-600 dark:text-gray-300 text-center mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#1f3b73] mb-3 sm:mb-4 text-center">Tech Division</h3>
+            <p className="text-gray-600 dark:text-gray-300 text-center mb-4 sm:mb-6 text-sm sm:text-base">
               Building innovative tech solutions for tomorrow's challenges.
             </p>
-            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+            <ul className="space-y-2 sm:space-y-3 text-gray-600 dark:text-gray-300 text-sm sm:text-base">
               <li className="flex items-center space-x-2">
                 <span className="text-blue-500">✓</span>
                 <span>Web Development</span>
@@ -226,34 +226,34 @@ function Home() {
         </section>
 
         {/* Stats Section */}
-        <div className="bg-gradient-to-r from-blue-900 to-purple-900 rounded-2xl p-12 mb-16 text-white">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">10K+</div>
-              <p className="text-gray-300">Active Students</p>
+        <div className="w-full bg-gradient-to-r from-blue-900 to-purple-900 rounded-2xl p-4 sm:p-6 md:p-8 mb-12 sm:mb-16 text-white">
+          <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+            <div className="text-center p-2 sm:p-0">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">10K+</div>
+              <p className="text-sm sm:text-base text-gray-300">Active Students</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">50M+</div>
-              <p className="text-gray-300">Trading Volume</p>
+            <div className="text-center p-2 sm:p-0">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">50M+</div>
+              <p className="text-sm sm:text-base text-gray-300">Trading Volume</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">100+</div>
-              <p className="text-gray-300">Projects Completed</p>
+            <div className="text-center p-2 sm:p-0">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">100+</div>
+              <p className="text-sm sm:text-base text-gray-300">Projects Completed</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">95%</div>
-              <p className="text-gray-300">Success Rate</p>
+            <div className="text-center p-2 sm:p-0">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">95%</div>
+              <p className="text-sm sm:text-base text-gray-300">Success Rate</p>
             </div>
           </div>
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1f3b73] mb-6">Ready to Get Started?</h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
+        <div className="w-full text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1f3b73] mb-4 sm:mb-6">Ready to Get Started?</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-6 sm:mb-8 max-w-2xl mx-auto">
             Join our community and take the first step towards your success in technology and trading.
           </p>
-          <button className="bg-secondary hover:bg-secondary-dark text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+          <button className="bg-secondary hover:bg-secondary-dark text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-sm sm:text-base">
             Get Started Now
           </button>
         </div>

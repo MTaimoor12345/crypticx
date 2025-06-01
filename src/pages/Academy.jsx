@@ -51,36 +51,25 @@ export default function Academy() {
   }, [banners.length]);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-dark text-black dark:text-white transition-all">
+    <div className="min-h-[calc(100vh-80px)] bg-white dark:bg-dark text-black dark:text-white transition-all">
       {/* Coming Soon Message */}
-      <div className="bg-gray-50 dark:bg-gray-900 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="bg-gray-50 dark:bg-gray-900 py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="flex justify-center mb-8">
-              <div className="bg-primary/10 dark:bg-primary/20 p-4 rounded-full">
-                <FaGraduationCap className="text-6xl text-primary dark:text-secondary" />
+            <div className="flex justify-center mb-6">
+              <div className="bg-primary/10 dark:bg-primary/20 p-3 rounded-full">
+                <FaGraduationCap className="text-5xl text-primary dark:text-secondary" />
               </div>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Coming Soon !
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              Coming Soon!
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               We're working hard to bring you comprehensive learning resources. Our academy will feature expert-led courses, interactive workshops, and hands-on projects to help you master new skills.
             </p>
-           
-
-
-
-
           </div>
         </div>
       </div>
-
-     
- 
-
-
-      
     </div>
   );
 }
