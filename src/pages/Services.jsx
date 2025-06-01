@@ -328,35 +328,35 @@ function Services() {
 
         {/* Why Choose Us */}
         <div className="bg-gradient-to-r from-blue-900 to-purple-900 rounded-2xl p-12 mb-16 text-white">
-          <h2 className="text-3xl font-bold mb-8 text-center">Why Choose Our Services?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">Why Choose Our Services?</h2>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-4">
-                <FaChartLine className="text-3xl" />
+                <FaChartLine className="text-3xl text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Proven Results</h3>
-              <p className="text-gray-300">Consistent delivery of high-quality solutions</p>
+              <h3 className="text-xl font-bold mb-2 text-white">Proven Results</h3>
+              <p className="text-white/80">Consistent delivery of high-quality solutions</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-4">
-                <FaShieldAlt className="text-3xl" />
+                <FaShieldAlt className="text-3xl text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Security First</h3>
-              <p className="text-gray-300">Enterprise-grade security measures</p>
+              <h3 className="text-xl font-bold mb-2 text-white">Security First</h3>
+              <p className="text-white/80">Enterprise-grade security measures</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-4">
-                <FaUsers className="text-3xl" />
+                <FaUsers className="text-3xl text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Expert Team</h3>
-              <p className="text-gray-300">Skilled professionals with years of experience</p>
+              <h3 className="text-xl font-bold mb-2 text-white">Expert Team</h3>
+              <p className="text-white/80">Skilled professionals with years of experience</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-4">
-                <FaRobot className="text-3xl" />
+                <FaRobot className="text-3xl text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Innovation</h3>
-              <p className="text-gray-300">Cutting-edge technology solutions</p>
+              <h3 className="text-xl font-bold mb-2 text-white">Innovation</h3>
+              <p className="text-white/80">Cutting-edge technology solutions</p>
             </div>
           </div>
         </div>
